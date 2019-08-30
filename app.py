@@ -69,7 +69,7 @@ def token_not_fresh_callback():
 @jwt.revoked_token_loader
 def revoked_token_callback():
     return jsonify({
-        'description': 'The token hasw been revoked.',
+        'description': 'The token has been revoked.',
         'error': 'token_revoked'
     }), 401
 
